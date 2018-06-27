@@ -1,0 +1,4 @@
+
+Run this command for this example:
+
+python verifier.py -s examples\example2\example.2.lp examples\example2\rewrite.2.lp examples\example2\instances

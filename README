@@ -1,0 +1,26 @@
+Requirements:
+ > Python 2.7.*
+ > Download clingo v5.2.1 (https://github.com/potassco/clingo/releases/download/v5.2.1/clingo-5.2.1-win64.zip)
+ 
+ > Windows : 
+	Add the path of unziped (clingo-5.2.1)folder to the "path" environmental variable.
+
+ > Linux :
+	Update your clingo-5.2.1 path in CLINGO_PATH variable present in verifier.py #settings.
+
+ 
+usage: python verifier.py [options] original_input re-written_input [instance_directory]
+
+              options:
+
+              verify single example
+                -s (relative_path original_input) (relative_path re-written_input) (relative_path instance_directory)
+                -ns (relative_path original_input) (relative_path re-written_input)
+
+              verify all examples
+                None relative_path_directory_name
+
+usage examples:
+python verifier.py examples
+python verifier.py -s examples\example2\example.2.lp examples\example2\rewrite.2.lp examples\example2\instances
+python verifier.py -ns examples\example3\example.3.lp examples\example3\rewrite.3.lp
